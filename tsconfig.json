@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es6",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "outDir": "dist",
+    "lib": [
+      "dom",
+      "es2018"
+    ],
+  },
+  "include": [
+    "src/**/*",
+    "custom-type/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+}
