@@ -1,5 +1,5 @@
 {
-  "name": "repo-be",
+  "name": "nodejs-express-server",
   "version": "0.0.1",
   "scripts": {
     "start": "ts-node-dev -r tsconfig-paths/register src/index.ts",
