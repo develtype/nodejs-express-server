@@ -1,14 +1,14 @@
 import { Router } from 'express';
-import { ServerError } from 'src/error/server-error';
-import { DataModule } from 'src/module/data.module';
-import { DataMemoryRepository } from 'src/repository/memory/data.memory.repository';
+import { ServerError } from 'src/error/server.error';
+import { DataRepositoryMemory } from 'src/repository/memory/data.repository.memory';
+import { DataService } from 'src/service/data.service';
 import { ErrorCodeEnum } from 'src/type/error.type';
 
 export function dataRouter() {
   const router = Router();
 
-  const dataRepo = new DataMemoryRepository();
-  const dataService = new DataModule({ dataRepo });
+  const dataRepo = new DataRepositoryMemory();
+  const dataService = new DataService({ dataRepo });
 
   router.get('/', async (req, res) => {
     try {

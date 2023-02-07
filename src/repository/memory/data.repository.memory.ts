@@ -1,7 +1,7 @@
 import { DatasType, DataType } from 'src/type/data.type';
 import { memotyDataUtil } from 'src/util/memory-data.util';
 
-export class DataMemoryRepository {
+export class DataRepositoryMemory {
   private datas: DatasType = Array.from(Array(10).keys()).reduce<{
     [id: string]: DataType;
   }>((res) => {
