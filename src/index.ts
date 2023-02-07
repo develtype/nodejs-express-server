@@ -1,7 +1,7 @@
 import compression from 'compression';
 import cors from 'cors';
 import express from 'express';
-import { dataRouter } from './router/data-router';
+import { dataRouter } from './router/data.router';
 
 const app = express();
 
