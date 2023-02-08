@@ -11,6 +11,9 @@ export function dataRouter() {
   const dataController = new DataController({ dataService });
 
   router.get('/', dataController.getDatas);
+  router.post('/', dataController.createData);
+  router.put('/:id', dataController.updateData);
+  router.delete('/:id', dataController.deleteData);
 
   return router;
 }

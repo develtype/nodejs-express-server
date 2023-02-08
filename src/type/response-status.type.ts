@@ -1,4 +1,4 @@
-export enum ErrorCodeEnum {
+export enum HttpStatusCodeEnum {
   OK = 200,
   CREATED = 201,
   NO_CONTENT = 204,
