@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Controller } from 'src/decorator/controller.decorator';
+import { RouteAdaptor } from 'src/decorator/route-adaptor.decorator';
 import { DataService } from 'src/service/data.service';
 
 type DataContollerType = {
@@ -14,7 +14,7 @@ export class DataController {
     this.getDatas = this.getDatas.bind(this);
   }
 
-  @Controller
+  @RouteAdaptor
   async getDatas(req: Request, res: Response) {
     const dataRes = await this.dataService.getDatas();
 

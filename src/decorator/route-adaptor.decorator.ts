@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from 'express';
 import { ServerError } from 'src/error/server.error';
 import { ErrorCodeEnum } from 'src/type/error.type';
 
-export function Controller(
+export function RouteAdaptor(
   target: any,
   propertyKey: string,
   descriptor: PropertyDescriptor,
