@@ -1,10 +1,10 @@
-import { ErrorCodeEnum } from 'src/type/error.type';
+import { HttpStatusCodeEnum } from 'src/type/response-status.type';
 
 export class ServerError {
-  httpStatus = ErrorCodeEnum.INTERNAL_SERVER_ERROR;
+  httpStatus = HttpStatusCodeEnum.INTERNAL_SERVER_ERROR;
   message = '';
-  constructor(httpStatueCode: ErrorCodeEnum, message: string) {
-    this.httpStatus = httpStatueCode;
+  constructor(httpStatusCode: HttpStatusCodeEnum, message: string) {
+    this.httpStatus = httpStatusCode;
     this.message = message;
   }
 }
